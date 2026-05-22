@@ -44,11 +44,11 @@ button.addEventListener("click", function(e){
     const call = document.querySelector("#call").value;
     const location = document.querySelector("#location").value;
      if(name.trim() === "" || project.trim() === "" || number.trim()=== ""
-    || message.trim()=== ""|| call.trim()=== "" || location.trim()==="" || !email.trim().includes("@")){
+    || message.trim()=== ""|| call.trim()=== "" || location.trim()===""){
         alert("Booking section is empty")
      }else{
         alert("sent successfully")
-     }if(!email.trim().includes("@")){
+     }if(!email.trim().includes("@") || email.trim() === ""){
         alert("put a valid email")
      }
     
